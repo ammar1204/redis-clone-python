@@ -1,6 +1,6 @@
 import socket
 
-HOST = "127.0.0.1"
+HOST = "172.31.128.1"
 PORT = 6379
 
 def send_command(command):
