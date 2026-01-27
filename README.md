@@ -112,6 +112,6 @@ This section documents the design decisions I made and why — the kind of reaso
 
 ## Files
 
-- `server.py` - Complete server (~230 lines)
+- `server.py` - Complete server
 - `client.py` - Simple CLI client
 - `dump.json` - Persisted data (created on shutdown)
