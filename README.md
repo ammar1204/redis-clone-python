@@ -51,7 +51,6 @@ This section documents the design decisions I made and why — the kind of reaso
 
 **When I'd use threading:** CPU-bound work like image processing or ML inference.
 
----
 
 ### 2. Lazy vs Active Expiration
 
@@ -66,7 +65,6 @@ This section documents the design decisions I made and why — the kind of reaso
 
 **Production improvement:** Redis uses lazy + probabilistic active expiration — a background task randomly samples keys and deletes expired ones. This bounds memory without scanning everything.
 
----
 
 ### 3. JSON Persistence vs Write-Ahead Log (WAL)
 
@@ -82,7 +80,6 @@ This section documents the design decisions I made and why — the kind of reaso
 
 **Production improvement:** Real Redis offers both RDB (periodic snapshots) and AOF (append-only log). AOF with `fsync` on every write gives durability at the cost of throughput.
 
----
 
 ### 4. In-Memory Dict vs LSM Tree / B-Tree
 
@@ -98,7 +95,6 @@ This section documents the design decisions I made and why — the kind of reaso
 
 **When I'd use B-Tree:** Building a database index or filesystem.
 
----
 
 ### 5. No Connection Pooling
 
@@ -108,7 +104,6 @@ This section documents the design decisions I made and why — the kind of reaso
 
 **Production improvement:** Limit max connections, reuse buffers, implement connection timeouts.
 
----
 
 ## Files
 
