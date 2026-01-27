@@ -36,7 +36,7 @@ OK
 
 ## Architectural Tradeoffs
 
-This section documents the design decisions I made and why — the kind of reasoning expected in FAANG system design discussions.
+This section documents the design decisions I made and why
 
 ### 1. Single-threaded Asyncio vs Multi-threading
 
