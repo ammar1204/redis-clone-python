@@ -110,10 +110,6 @@ This section documents the design decisions I made and why — the kind of reaso
 
 ---
 
-### Summary: What I'd Tell an Interviewer
-
-> "I built this to understand the core mechanics of Redis. I chose asyncio because Redis is I/O-bound, not CPU-bound — a single thread avoids lock overhead while handling thousands of connections. I used lazy expiration for simplicity, knowing that production systems add probabilistic background cleanup. Persistence is a JSON dump because durability wasn't the learning goal, but I understand how WAL and fsync provide crash safety at the cost of write throughput."
-
 ## Files
 
 - `server.py` - Complete server (~230 lines)
