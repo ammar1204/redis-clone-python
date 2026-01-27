@@ -1,0 +1,22 @@
+{
+  "magic": "REDIS-CLONE",
+  "version": "0001",
+  "timestamp": 1769500628,
+  "databases": [
+    {
+      "db_index": 0,
+      "entries": {
+        "foo": {
+          "type": "string",
+          "expires_at": null,
+          "value": "bar"
+        },
+        "test": {
+          "type": "string",
+          "expires_at": null,
+          "value": "hello"
+        }
+      }
+    }
+  ]
+}
