@@ -1,4 +1,4 @@
-# Educational Redis Clone
+# Redis Clone
 
 A learning-focused key-value store in Python. Demonstrates:
 - Streaming RESP protocol parsing
